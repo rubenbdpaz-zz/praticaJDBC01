@@ -21,10 +21,10 @@ public class Conexao {
 	private static Connection fazerConexao() throws SQLException {
 		try {
 			conexao = DriverManager.getConnection(url, user, pass);
-			System.out.println("Deu bom");
+			System.out.println("Conexão Aberta");
 		} catch (SQLException e) {
 			// TODO: handle exception
-			System.out.println("Deu ruim");
+			System.out.println("Erro na abertura da conexão");
 		}
 		return conexao;
 	}
